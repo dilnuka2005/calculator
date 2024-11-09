@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Supermarket Billing System</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Supermarket Billing Machine</h1>
+        <form id="billingForm">
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" required>
+            
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" required>
+
+            <label for="price">Price:</label>
+            <input type="number" id="price" required>
+
+            <button type="button" onclick="addProduct()">Add Product</button>
+        </form>
+
+        <h2>Bill</h2>
+        <table id="billTable">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="billBody"></tbody>
+        </table>
+
+        <h3>Total Amount: <span id="totalAmount">0</span></h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
